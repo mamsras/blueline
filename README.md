@@ -5,7 +5,7 @@ Un gestionnaire de tâches basé sur React et Django REST Framework permettant d
 ## Fonctionnalités
 
 - **Gestion des tâches** : Ajout, modification et suppression des tâches.
-- **Notifications en temps réel** : Notifications pour les événements liés aux tâches via WebSocket.
+- **Notifications en temps réel** : Notifications pour les événements liés aux tâches via WebSocket et redis server.
 - **Interface utilisateur moderne** : Utilisation de React et Material UI pour une interface intuitive et responsive.
 - **Planification des tâches** : Planifiez les tâches avec des dates et heures spécifiques grâce au champ `datetime-local`.
 - **Support multi-utilisateurs** : Sécurisé avec l'authentification par jetons.
@@ -34,6 +34,7 @@ Un gestionnaire de tâches basé sur React et Django REST Framework permettant d
 - Python 3.8+
 - Django 4.2+
 - SQLite
+- Redis
 - `pip install -r requirements.txt`
 
 ### Frontend
@@ -44,9 +45,18 @@ Un gestionnaire de tâches basé sur React et Django REST Framework permettant d
 
 ## Installation et Configuration
 
-### Backend
-
 1. Clonez le dépôt :
    ```bash
    git clone https://github.com/votre-utilisateur/votre-projet.git
-   cd votre-projet/backend
+
+## installation des modules et dépendances
+
+    ## django
+    - cd task_manager
+    - pip install -r requirements.txt
+    - docker-compose up (commande pour installer redis sur docker)
+    ## React
+    - cd frontend
+    - npm install
+
+Puis lancer django avec 'python manage.py runserver' et l'interface React avec 'npm start'
