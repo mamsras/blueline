@@ -1,0 +1,16 @@
+# Environnement virtuel
+venv/
+env/
+
+# Python
+*.pyc
+__pycache__/
+
+# Django
+#*.sqlite3
+
+# Node.js
+node_modules/
+
+# Environnements
+.env
