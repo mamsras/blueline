@@ -47,7 +47,7 @@ Un gestionnaire de tâches basé sur React et Django REST Framework permettant d
 
 1. Clonez le dépôt :
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone https://github.com/mamsras/blueline.git
 
 ## installation des modules et dépendances
 
